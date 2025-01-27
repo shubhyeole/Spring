@@ -19,11 +19,7 @@ public class SpbDataJpaApplication {
 	public static void main(String[] args) {
 		ApplicationContext context = SpringApplication.run(SpbDataJpaApplication.class, args);
 		studentService = context.getBean(StudentsServiceImpl.class);
-		if (studentService == null) {
-			System.out.println("Bsdk null ahe");
-		} else {
-			System.out.println("not null " + studentService);
-		}
+		
 		Scanner sc = new Scanner(System.in);
 
 		boolean status = true;
